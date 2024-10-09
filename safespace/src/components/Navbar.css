@@ -1,0 +1,13 @@
+.image_wrapper {
+    
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    
+}
+
+.toolbar{
+    background-color: #88D498 ;
+    display: flex;
+    justify-content: space-between;
+}

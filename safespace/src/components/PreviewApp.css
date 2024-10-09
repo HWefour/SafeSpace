@@ -1,0 +1,107 @@
+.big_wrapper {
+    & h3 {
+        font-size: 22;
+        font-weight: 500;
+        font-family:'Courier New', Courier, monospace;
+    }
+}
+
+.content_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px  10px  0 10px;
+}
+
+.buttons_group {
+    display: flex;
+    gap: 40px;
+    & Button {
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+    }
+}
+
+.text {
+    z-index: 2;
+    & h1 {
+        margin: 0;
+    }
+}
+
+.title {
+    font-size: 90px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    padding-bottom: 10px;
+
+}
+
+.under_text {
+    width: 500px;
+
+}
+
+.phone_wrapper {
+    top: 70px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+
+.phone {
+    z-index: 2;
+    position: absolute;
+    left: 40px;
+    
+}
+.phone2 {
+    z-index: 3;
+    position: absolute;
+    left: 190px;
+    top: 70px;
+    
+}
+.bg {
+    z-index: 1;
+}
+
+.doctors-section {
+    background-color: #88D498;
+    padding: 50px 20px;
+
+    text-align: center;
+    margin-top: 160px;
+  }
+
+
+.doctors-section h2 {
+    font-size: 2rem;
+    color: #ffff; 
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 56px;
+  }
+  
+  .list {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
+  }
+
+.key_card {
+    & p {
+        border: 1px solid black;
+        border-radius: 5px;
+        
+
+    }
+}
+
+  
