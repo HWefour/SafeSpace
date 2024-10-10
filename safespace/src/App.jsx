@@ -1,7 +1,7 @@
 import './App.css';
 import PreviewApp from './components/PreviewApp';
 import Dashboard from './components/Dashboard';
-import Questionnaire from './components/Questionnaire';  // Import du composant Questionnaire
+import Questionnaire from './components/Questionnaire';  
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Graph from './components/Graph';
 
