@@ -10,10 +10,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 60px  10px  0 10px;
+    padding: 20px  10px  0 10px;
 }
 
 .buttons_group {
+    padding-top: 40px;
     display: flex;
     gap: 40px;
     & Button {
@@ -21,10 +22,12 @@
         height: 40px;
         border-radius: 10px;
     }
+
 }
 
 .text {
     z-index: 2;
+    height: 550px;
     & h1 {
         margin: 0;
     }
@@ -73,7 +76,6 @@
 .doctors-section {
     background-color: #88D498;
     padding: 50px 20px;
-
     text-align: center;
     margin-top: 160px;
   }
@@ -95,13 +97,65 @@
     flex-wrap: wrap;
   }
 
-.key_card {
-    & p {
-        border: 1px solid black;
-        border-radius: 5px;
-        
-
-    }
+  .key_card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; 
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); 
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 15px; 
+    width: 100%;
+    max-width: 310px; 
 }
 
-  
+.key_card:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.key_card h3 {
+    font-size: 18px; 
+    font-weight: 500; 
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 8px; 
+    text-align: center;
+    color: #444; 
+    transition: color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.key_card:hover h3 {
+    color: #00897b; 
+    transform: scale(1.03); 
+}
+
+.key_card p {
+    display: none; 
+    font-size: 14px; 
+    color: #666; 
+    margin: 5px 0 0;
+    text-align: center;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.key_card:hover p {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.key_card p {
+    opacity: 0;
+    transform: translateY(-5px); 
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cards_hover{
+    height: 300px;
+}

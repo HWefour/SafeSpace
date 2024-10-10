@@ -1,8 +1,11 @@
 import Button from "@mui/material/Button";
 import "../components/PreviewApp.css";
 import "../components/Card.css";
+import Navbar from '../components/Navbar';
+
 import Card from "./Card";
 import {useState } from "react";
+import BasicModal from "./BasicModal";
 
 export default function PreviewApp() {
 
@@ -14,6 +17,7 @@ export default function PreviewApp() {
 
   return (
     <div className="big_wrapper">
+      <Navbar/>
       <div className="content_wrapper">
         <div className="phone_wrapper">
           <div className="bg">
@@ -32,7 +36,7 @@ export default function PreviewApp() {
             Concu pour votre confort, Découvrez notre solution qui est aussi la
             votre
           </h3>
-          <div>
+          <div className="cards_hover">
             <div className="key_card" onMouseEnter={()=>setDisplayParagraph(true)} onMouseLeave={()=>setDisplayParagraph(false)}>
               <h3>Questionnaire personnalisable</h3>
               {displayParagraph && (
@@ -56,9 +60,7 @@ export default function PreviewApp() {
             </div>
           </div>
           <div className="buttons_group">
-            <Button variant="contained" color="success">
-              LogIn
-            </Button>
+            <BasicModal colorProps="success"/>
             <Button variant="outlined" color="success">
               SignUp
             </Button>
@@ -70,7 +72,7 @@ export default function PreviewApp() {
         <div className="list">
           <Card
             name="Efnane Haitam"
-            title="Dev Fullstack"
+            title="Developpeur Fullstack"
             imgsrc="src/assets/AvatarMaker.png"
           />
           <Card

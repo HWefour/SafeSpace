@@ -1,6 +1,4 @@
 .login-page {
-    background-color: #f0f8f5; 
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,12 +10,12 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 350px;
+    width: 450px;
   }
   
   .login-container h2 {
-    color: #1F7A1F; 
     margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .form-group {
@@ -28,8 +26,8 @@
   .form-group label {
     display: block;
     font-size: 1rem;
-    color: #1F7A1F;
     margin-bottom: 8px;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .form-group input {
@@ -54,3 +52,17 @@
   .login-btn:hover {
     background-color: #88D498; 
   }
+
+
+  .box {
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .modal_wrapper{
+    & Button {
+    font-weight: bold;
+    font-size: 16PX;
+  }
+}

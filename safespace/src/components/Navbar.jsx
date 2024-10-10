@@ -9,23 +9,17 @@ import {useState } from "react";
 
 export default function ButtonAppBar() {
 
-  const [displayModal , setDisplayModal]= useState(false)
 
-  const handleClickModal = ()=> {
-    setDisplayModal(!displayModal)
-  }
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar className='toolbar'>
           
           <img src='src/assets/logo.png' className='image_wrapper'/>
-          <Button color="inherit" onClick={handleClickModal}>Login</Button>
+          <BasicModal/>
         </Toolbar>
       </AppBar>
-      {displayModal && (
-        <BasicModal/>
-      )}
+
     </Box>
   );
 }
