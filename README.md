@@ -22,16 +22,18 @@ Ce projet est une application web construite avec Vite, React et Material UI. Il
 
 Pour installer ce projet, clonez le dépôt et installez les dépendances :
 
-
+```bash
 git clone https://github.com/tonnomutilisateur/tonprojet.git
 cd tonprojet
 npm install
-
+```
 
 ## Démarrage
 
 pour demarrer l'application utilisez cette commade : 
 
+```bash
 npm run dev
+```
 
 
